@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Alunos</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Cadastro de Alunos</h1>
+  <form action="/cadastro" method="POST">
+    <label>Nome: <input type="text" name="nome" required></label><br>
+    <label>E-mail: <input type="email" name="email" required></label><br>
+    <label>Idade: <input type="number" name="idade" required></label><br>
+    <label>Curso: <input type="text" name="curso" required></label><br>
+    <label>Turno:
+      <select name="turno" required>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+      </select>
+    </label><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+</html>
